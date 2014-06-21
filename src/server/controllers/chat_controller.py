@@ -108,7 +108,7 @@ class ChatController:
     def find_stamps(cls, group_id):
         path = "/server/assets/img/stamps/"
         stamps = []
-        for num in range(1, 8):
+        for num in range(1, 47):
             stamps.append(path + "stamp{num}.PNG".format(num=str(num).zfill(2)))
 
         return jsonify(stamps=stamps)
